@@ -4,7 +4,7 @@
   "description": "**What Do We Need for React?**\r 1. index.html\r 2. Support for ES6\r 3. webpack\r 4. Root component\r 5. react-hot-loader",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,10 @@
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
     "@babel/preset-react": "^7.18.6",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "react-refresh": "^0.14.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
