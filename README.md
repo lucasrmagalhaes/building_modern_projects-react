@@ -1,5 +1,3 @@
-### Building Modern Projects with React
-
 **What Do We Need for React?**
 1. index.html
 2. Support for ES6

@@ -1,0 +1,20 @@
+{
+  "name": "building_modern_projects-react",
+  "version": "1.0.0",
+  "description": "**What Do We Need for React?**\r 1. index.html\r 2. Support for ES6\r 3. webpack\r 4. Root component\r 5. react-hot-loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasrmagalhaes/building_modern_projects-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasrmagalhaes/building_modern_projects-react/issues"
+  },
+  "homepage": "https://github.com/lucasrmagalhaes/building_modern_projects-react#readme"
+}
