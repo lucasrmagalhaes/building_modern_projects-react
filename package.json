@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/lucasrmagalhaes/building_modern_projects-react/issues"
   },
-  "homepage": "https://github.com/lucasrmagalhaes/building_modern_projects-react#readme"
+  "homepage": "https://github.com/lucasrmagalhaes/building_modern_projects-react#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "@babel/preset-react": "^7.18.6"
+  }
 }
