@@ -32,3 +32,9 @@ localhost:3000
 ```
 
 ---
+
+```
+npm install -D @pmmmwh/react-refresh-webpack-plugin react-refresh
+```
+
+---
