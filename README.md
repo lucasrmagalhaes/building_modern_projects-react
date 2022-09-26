@@ -56,3 +56,8 @@ npm install redux-persist
 [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
 
 ---
+
+**Redux best practices**
+- Export the connected and unconnected versions of a component.
+- Keep Redux actions and async operations out of your reducers.
+- Think carefully about connecting components.
