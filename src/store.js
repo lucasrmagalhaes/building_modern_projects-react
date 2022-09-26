@@ -5,9 +5,7 @@ import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 
 import { todos } from './todos/reducers';
 
-const reducers = { 
-    todos 
-};
+const reducers = { todos };
 
 const persistConfig = {
     key: 'root',
@@ -19,5 +17,7 @@ const rootReducer = combineReducers(reducers);
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({
-    reducer: persistedReducer
+    reducer: persistedReducer,
+    devTools: true,
+    middleware: getDefaultMiddleware => getDefaultMiddleware({ serializableCheck: false })
 });
