@@ -43,4 +43,12 @@ npm install -D @pmmmwh/react-refresh-webpack-plugin react-refresh
 npm install redux react-redux
 ```
 
+```
+npm install @reduxjs/toolkit
+```
+
+```
+npm install redux-persist
+```
+
 ---
