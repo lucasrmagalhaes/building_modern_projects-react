@@ -52,3 +52,7 @@ npm install redux-persist
 ```
 
 ---
+
+[Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+
+---
