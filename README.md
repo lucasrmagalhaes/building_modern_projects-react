@@ -67,3 +67,13 @@ npm install redux-persist
 **Side-Effect Libraries**
 - Redux-Saga is more popular
 - But Redux-Thunk is simpler
+
+---
+
+```
+npm install redux-thunk redux-devtools-extension @babel/runtime
+```
+
+```
+npm install --save-dev @babel/plugin-transform-runtime
+```

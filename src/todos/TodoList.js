@@ -5,10 +5,11 @@ import TodoForm from './TodoForm';
 import TodoListItem from './TodoListItem';
 
 import { removeTodo, markTodoAsCompleted } from './actions';
+import { displayAlert } from './thunks';
 
 import './TodoList.css';
 
-const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed }) => (
+const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed, onDisplayAlertClicked }) => (
     <div className='list-wrapper'>
         <TodoForm />
 
@@ -17,7 +18,7 @@ const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed }) => (
                 key={key} 
                 todo={todo} 
                 onRemovePressed={onRemovePressed}
-                onCompletedPressed={onCompletedPressed}
+                onCompletedPressed={onDisplayAlertClicked}
             /> 
         )}
     </div>
@@ -29,7 +30,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     onRemovePressed: text => dispatch(removeTodo(text)),
-    onCompletedPressed: text => dispatch(markTodoAsCompleted(text))
+    onCompletedPressed: text => dispatch(markTodoAsCompleted(text)),
+    onDisplayAlertClicked: text => dispatch(displayAlert(text))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
