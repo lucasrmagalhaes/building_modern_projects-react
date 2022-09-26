@@ -27,3 +27,7 @@ http://localhost:8080/todos/:id
 
 **POST /todos/:id/completed**
 - Marks a todo as completed.
+
+```
+http://localhost:8080/todos/:id/completed
+```
