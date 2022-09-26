@@ -18,8 +18,12 @@ http://localhost:8080/todos
 }
 ```
 
-**POST /todos/:id/completed**
-- Marks a todo as completed.
-
 **DELETE /todos/:id**
 - Deletes a todo.
+
+```
+http://localhost:8080/todos/:id
+```
+
+**POST /todos/:id/completed**
+- Marks a todo as completed.
