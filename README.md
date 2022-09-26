@@ -61,3 +61,9 @@ npm install redux-persist
 - Export the connected and unconnected versions of a component.
 - Keep Redux actions and async operations out of your reducers.
 - Think carefully about connecting components.
+
+---
+
+**Side-Effect Libraries**
+- Redux-Saga is more popular
+- But Redux-Thunk is simpler
