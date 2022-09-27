@@ -90,3 +90,8 @@ npm install reselect
 ```
 
 ---
+
+**Styled-Components**
+- Allow us to define styles inside our JavaScript files.
+
+---
