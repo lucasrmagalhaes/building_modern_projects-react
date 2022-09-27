@@ -95,3 +95,7 @@ npm install reselect
 - Allow us to define styles inside our JavaScript files.
 
 ---
+
+```
+npm install styled-components
+```
