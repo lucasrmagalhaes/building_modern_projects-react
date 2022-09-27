@@ -109,3 +109,9 @@ npm install --save-dev mocha chai
 ```
 npm install --save-dev @babel/register
 ```
+
+---
+
+```
+npm run test
+```
