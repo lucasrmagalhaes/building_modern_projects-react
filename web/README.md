@@ -82,3 +82,11 @@ npm install --save-dev @babel/plugin-transform-runtime
 
 **Why Do We Need Selectors?**
 - Selectors give us a place to put logic for combining, filtering, transforming storing data.
+
+---
+
+```
+npm install reselect
+```
+
+---
