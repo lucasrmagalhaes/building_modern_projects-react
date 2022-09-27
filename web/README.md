@@ -77,3 +77,8 @@ npm install redux-thunk redux-devtools-extension @babel/runtime
 ```
 npm install --save-dev @babel/plugin-transform-runtime
 ```
+
+---
+
+**Why Do We Need Selectors?**
+- Selectors give us a place to put logic for combining, filtering, transforming storing data.
