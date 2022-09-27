@@ -4,7 +4,7 @@ import storage from 'redux-persist/lib/storage';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import thunk from 'redux-thunk';
 
-import { todos, isLoading } from './todos/reducers';
+import { todos } from './todos/reducers';
 
 const persistConfig = {
     key: 'root',
@@ -12,10 +12,7 @@ const persistConfig = {
     stateReconciler: autoMergeLevel2
 };
 
-const reducers = combineReducers ({ 
-    todos,
-    isLoading 
-});
+const reducers = combineReducers ({ todos });
 
 const persistedReducer = persistReducer(persistConfig, reducers);
 
