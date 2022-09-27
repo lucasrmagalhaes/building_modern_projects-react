@@ -99,3 +99,13 @@ npm install reselect
 ```
 npm install styled-components
 ```
+
+---
+
+```
+npm install --save-dev mocha chai
+```
+
+```
+npm install --save-dev @babel/register
+```
