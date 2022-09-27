@@ -115,3 +115,17 @@ npm install --save-dev @babel/register
 ```
 npm run test
 ```
+
+---
+
+```
+npm install --save-dev sinon
+```
+
+```
+npm install --save-dev node-fetch@2.6.0
+```
+
+```
+npm install --save-dev fetch-mock@9.0.0-beta.2
+```
