@@ -5,6 +5,10 @@ import styled from 'styled-components';
 const Container = styled.div`
     background: #FFF;
     border-radius: 8px;
+    border-bottom: ${props => (new Date(props.createdAt) > new Date(Date.now() - 8640000 * 5)
+        ? 'none'
+        : '2px solid red'
+    )};
     margin-top: 8px;
     padding: 16px;
     position: relative;
@@ -43,7 +47,6 @@ const RemoveButton = styled.button`
 const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => {
     const completedButton = (
         <CompletedButton 
-            className='completed-button'
             onClick={() => onCompletedPressed(todo.id)}
         >
             Mark as Completed
@@ -51,14 +54,18 @@ const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => {
     );
 
     return (
-        <Container>
+        <Container createdAt={todo.createdAt}>
             <h3>{todo.text}</h3>
+
+            <p>
+                Create at:&nbsp;
+                {( new Date(todo.createdAt)).toLocaleDateString() }
+            </p>
 
             <ButtonsContainer>
                 { todo.isCompleted ? null : completedButton }
                 
                 <RemoveButton 
-                    className='remove-button'
                     onClick={() => onRemovePressed(todo.id)}
                 >
                     Remove
