@@ -12,6 +12,12 @@ const ItemContainer = styled.div`
     box-shadow: 0 4px 8px grey;
 `;
 
+export const getBorderStyleForDate = (startingDate, currentDate) => (
+    startingDate > new Date(currentDate - 86400000 * 5)
+        ? 'none'
+        : '2px solid red'
+);
+
 const ItemContainerWithWarning = styled(ItemContainer)`
     border-bottom: 2px solid red;
 `;
